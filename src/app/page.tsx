@@ -6,8 +6,7 @@ import { motion } from 'framer-motion';
 
 const SUGGESTIONS = [
   "今日の東京の天気を教えて",
-  "最新のAIニュースを調べて",
-  "画面の背景色を薄い青色に変えて"
+  "最新のAIニュースを調べて"
 ];
 
 type StepData = {
