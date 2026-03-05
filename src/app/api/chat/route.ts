@@ -101,16 +101,6 @@ export async function POST(req: Request) {
           }
         },
       }),
-      change_bg_color: tool({
-        description: 'ユーザーの画面の背景色を指定した色に変更します。',
-        inputSchema: z.object({
-          color: z.string().describe('変更したい色（英語の色名や#RRGGBBなど、CSSで有効な値）'),
-          reason: z.string().describe('なぜその色に変更したかの理由'),
-        }),
-        execute: async ({ color, reason }) => {
-          return { success: true, color, reason, message: `背景色を ${color} に変更しました。` };
-        },
-      }),
     };
 
     // ステップごとの情報を記録する配列
